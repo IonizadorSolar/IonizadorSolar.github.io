@@ -1,0 +1,335 @@
+*{
+    box-sizing: border-box;
+}
+
+html{ scroll-behavior: smooth;}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em; }
+p{ font-size: 1.25em;}
+
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: black;
+    background-color: aqua;
+}
+
+button:hover{
+    background-color: rgb(14, 201, 201) ;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+
+.color-acento{ color: rgb(8, 218, 218);}
+
+header{
+    background-color: rgb(235,255,255);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(5, 216, 216);
+    font-size: 1.45em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+
+header a:hover{
+    color: rgb(5, 199, 199);
+}
+
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(media/Pileta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;    
+}
+
+
+#hero h1 {
+    color: rgb(0, 0, 0);
+}
+
+
+#somos-mastra .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#caracteristicas .container{
+    padding: 100px 50px;
+}
+
+#caracteristicas h3{
+    margin-top: 10px;
+}
+
+
+
+#caracteristicas .carta{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/3ionizadores.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    margin-bottom: auto;
+    border-radius: 15px;
+    color: rgb(245, 184, 94);
+}
+
+
+.elemento{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("media/cobre.jpg");
+    background-size: cover;
+    background-position: center center;  
+    padding: 50px;
+    margin: 17px;
+    border-radius: 15px;
+    color: rgb(245, 184, 94)
+}
+
+
+#mantenimiento .container{
+   text-align: center;
+   padding: 200px 12px;
+   font-size: 0.8em;
+}
+
+.acido{
+    color: crimson;
+}
+
+#contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+    background: linear-gradient(
+        50deg,
+        rgba(40,42,55,1) 50%,
+        rgba(40,42,55,0.7)),
+        url(media/ionizador.jpg);
+    border-radius: 25px;
+}
+
+#contacto h2{
+    color: #f4f6f9;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label{
+    font-size: 17px;
+    color: #959AAB;
+    margin-bottom: 10px;
+}
+
+input , textarea {
+    padding: 17px 14px;
+    background-color: #333646;
+    border: 0;
+    font-size: 15px;
+    color: #f4f6f9;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+:focus {
+    outline: 1px solid #1E92E9;
+}
+
+.btn{
+    background-color: #1E92E9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #219bf9;
+}
+
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer .container{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+    flex-direction: row;
+    justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+
+
+#somos-mastra .container{
+    display: flex;
+}
+
+#somos-mastra .texto{
+    max-width: 600px;
+    padding: 0px 30px;
+    width: 50%;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#somos-mastra h2{
+    margin-top: 0px;
+}
+
+#somos-mastra .img-container{
+   background-image: url("media/medidas.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+
+#caracteristicas .programas{
+    display: flex;
+    justify-content: center;
+}
+
+#caracteristicas p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#caracteristicas h3{
+    margin-top: 0;
+}
+
+#caracteristicas .carta{
+    padding: 50px;
+}
+
+#caracteristicas .elemento{
+    padding: 50px;
+}
+
+#mantenimiento .container{
+    text-align: initial;
+}
+
+#mantenimiento{
+    background-image: url("media/mantenimiento.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px 400px;
+    background-position: calc(100vw - 500px) 120px;
+}
+
+h4{ text-align: center;}
+
+body{
+    padding: 30px;
+
+}
+
+#contacto{
+    width: 100%;
+}
+
+form{
+    width: 100%;
+    max-width: 80%;
+}
+
+}
